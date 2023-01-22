@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Mondays Talk</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+      <script type="text/javascript" charset="utf-8" 
+      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,
+      https://vincenttam.github.io/javascripts/MathJaxLocal.js">
+      </script>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+			 <section>
+					<h2>Many-body theory of quantum batteries</h2>
+   		      João P. Mendonça<font color="#666">, Krzysztof Jachymski,<br> and Yao Wang (Clemson, SC, USA).</font> <br>
+			 </section>
+	         <section>
+	            <h3>Motivation: Quantum batteries</h3>
+	            <img src="mondaystalk/fig1.png" style="width:518px;height:505px;">
+	            <p style="font-style:italic;padding-right:800px;font-size:50%">*Sci. Adv. 2022, 8 eabk3160</p>
+	         </section>
+	         <section>
+	            <h3>Motivation: Quantum batteries</h3>
+	            <img src="mondaystalk/fig2.jpeg" style="width:703px;height:409px;">
+	            <p style="font-style:italic;padding-right:800px;font-size:50%">*ACS Photonics 2018, 5, 1, 65–79</p>
+	         </section>
+	         <section>
+	            <h3>Background</h3>
+	            <ul>
+	               <li class="fragment"> Dicke model, </li>
+	               <li class="fragment"> The variational principle, </li>
+	               <li class="fragment"> Yao Wang's method. </li>
+	            </ul>
+	         </section>
+	         <section>
+	         	<h3>Dicke model</h3>
+                <p> The Dicke model is one of the most fundamental models describing light-matter interaction. The Hamiltonian is written as </p>
+	            <ul>
+	               <li class="fragment"> \(N\) two-level systems; </li>
+	               <li class="fragment"> Single bosonic mode; </li>
+	               <li class="fragment"> No rotating wave approximation. </li>
+	            </ul>
+         	</section>
+	         <section>
+	            <h3>Dicke model</h3>
+				<h4> The Hamiltonian </h4>
+             	<p> $$ H = \omega_0 a^{\dagger} a + \Delta\sum_{j=1}^N \sigma_j^z + g(a+a^{\dagger})\sum_{j=1}^N \sigma_j^x. $$ </p>
+	         	<h4 class="fragment"> Total spin picture </h4>
+	         	<p class="fragment"> $$ H=\omega_0 a^\dagger a+\Delta S^z+g S^x (a+a^\dagger).$$ Due to this symmetry, the atomic degrees of freedom can be described in terms of \(N + 1\) states. </p>
+	         </section>
+	         <section>
+	         	<h3>Dicke model</h3>
+	         	The Hilbert space of this algebra is spanned by the Dicke state \( \{|j,m\rangle,m=-j,-j+1,...,j-1,j \} \) with \( j=N/2\).
+	         	
+<!-- Consequently, it connects only states with the same
+total spin S, that is, belong to the same Dicke manifold. This sym-
+metry provides a signiﬁcant simpliﬁcation of the problem be-
+cause it allows the description of the atomic degrees of freedom
+in terms of N + 1 states, rather than the entire Hilbert space of
+size 2 N . -->
+				<p><br> The Hilbert space of the total system can be expressed in terms of the basis \( \{ |n\rangle \otimes |j,m\rangle \} \), where \(|n\rangle\) is the Fock state basis.</p>
+	         </section>
+	         <section>
+	         	<h3>Dicke model</h3>
+	         	<h4> Superradiant transition </h4>
+	            <img src="mondaystalk/fig3.gif" style="width:616px;height:456px;float:left">
+	            <p style="float:top"> <br> It was found that, when the coupling \( g\) crosses a critical value \( g_c\), the Dicke model undergoes a second-order phase transition, known as the superradiant phase transition. </p>
+	         </section>
+	         <section>
+	            <h3>The variational principle</h3>
+	            <p> Let us suppose you wish to solve the time-independent Schrödinger equation, $$ H|\psi \rangle = E|\psi \rangle,$$ where \(|\psi \rangle\) is a trial solution. The variational principle states $$ \langle\psi | H |\psi \rangle > E_0,$$ where \(E_0\) is the true ground state energy.</p>
+	         </section>
+	         <section>
+	            <h3>Yao Wang's method</h3>
+                <p> A hybrid method that combines the variational principle, exact diagonalization, and an imaginary-time evolution of the variational parameters. </p>
+	            <ul>
+	               <li class="fragment"> Define an effective spin Hamiltonian \( H_{eff}=\langle \psi_{ph} | H | \psi_{ph}\rangle \), calculate the energy throught ED, and minimize the energy for fixed variational phonon parameters; </li>
+	               <li class="fragment"> Fix the electronic ansatz and perform imaginary-time evolution of the variational phonon parameters; </li>
+	               <li class="fragment"> Repeat the steps until the variational parameters converge. </li>
+	            </ul>
+	         </section>
+	         <section>
+	            <h3>Yao Wang's method</h3>
+	            <img src="mondaystalk/fig4.png" style="width:530px;height:470px;">
+	            <p style="font-style:italic;padding-right:800px;font-size:50%">*Phys. Rev. Research 2, 043258 (2020)</p>
+	         </section>
+	         <section>
+	            <h3>Application of the method <br> on the Dicke model</h3>
+	         </section>
+	         <section>
+	            <h3>Application of the method <br> on the Dicke model</h3>
+	            <p><br>Let us assume the state can be written as \( |\psi\rangle = |\psi_e\rangle \otimes |\psi_{ph}\rangle \).<br> Define the spin part of it,
+ $$ |\psi_{e}\rangle = e^{-i\frac{\theta}{2}\sum_j\sigma_j^y}|\downarrow_1\downarrow_2\cdots\rangle \equiv e^{-i\theta S^y/2}|N/2,-N/2\rangle. $$</p>
+	         </section>
+	         <section>
+	            <h3>Application of the method <br> on the Dicke model</h3>
+	            <h4> Case A: Coherent photon state ansatz </h4>
+	            <p> A coherent state $$ |\psi_{ph}\rangle=|\alpha\rangle\equiv D(\alpha)|0\rangle $$ is an eigenstate of the annihilation operator \(a|\alpha\rangle=\alpha|\alpha\rangle\). Its amplitude \( |\alpha| \) is related to the average number of photons.</p>
+	         </section>
+	         <section>
+	         	<h3>Application of the method <br> on the Dicke model</h3>
+	         	<h4> Case A: Coherent photon state ansatz </h4>
+	         	<img src="mondaystalk/fig5.png" style="width:600px;height:450px;float:left">
+	         	<p style="float:top"><br> The solutions \( E_3^*\) and \( E_4^*\) only exist above a critial coupling \( g_c=\sqrt{\omega_0\Delta/N} \). <br><br>Besides, \( E_1^*,E_2^*\propto N\) while \(E_3^*,E_4^*\propto N^2 \)</p>
+	         </section>
+	         <section>
+	            <h3>Application of the method <br> on the Dicke model</h3>
+	            <h4> Case B: Variational non-Gaussian transformation </h4>
+	            <p style="padding-right:50px;padding-left:50px"><br>Here we construct a variational wave function that absorbs entanglement between electrons and phonons into a variational non-Gaussian transformation, \( |\psi\rangle = U_{plrn}|\psi_e\rangle \otimes |\psi_{ph}\rangle \) where </p>
+	            $$
+	                U_{plrn} = \exp\{\lambda\sum_j \sigma^x_j (a-a^\dagger)\} \equiv e^{i\lambda S^x p}.
+	            $$
+	         </section>
+	         <section>
+	            <h3>Application of the method <br> on the Dicke model</h3>
+	            <h4> Case B: Variational non-Gaussian transformation </h4>
+	            <img src="mondaystalk/fig6a.png" style="width:600px;height:450px;float:left">
+	            <img src="mondaystalk/fig6b.png" style="width:600px;height:450px;float:right">
+	         </section>
+	         <section>
+	            <h3>Concluding remarks and next steps</h3>
+	         </section>
+	         <section>
+	            <h3>Work in progress</h3>
+	            <h4><br> Case C: Gaussian state ansatz </h4>
+	            $$ |\psi_{ph}\rangle = S(\xi)|\alpha\rangle \equiv S(\xi)D(\alpha)|0\rangle. $$
+	            <h4> Case D: NGS + Gaussian ansatz </h4>
+	            \( |\psi\rangle = U_{plrn}|\psi_e\rangle \otimes |\psi_{ph}\rangle \),
+	            where \( |\psi_{ph}\rangle = S(\xi)|\alpha\rangle \).
+	         </section>
+	         <section>
+	            <h3>Work in progress</h3>
+ 	            <h4> Spin-spin coupling </h4>
+ 	            <p> 
+ 	            Interaction between neighboring spins is an inevitable extension of the model and presents additional challenges.
+ 	            We can add an Ising-like coupling term,
+ 	            $$ \sum_{ij} \sigma_i^z\sigma_j^z. $$
+ 	            Here the \( Z_2\) symmetry is broken. ED will be necessary.
+ 	            </p>
+	         </section>
+	         <section>
+			    <h3>Perspectives</h3>
+			    <h4><br> Use chemistry parameters </h4>
+			    <p> In March we plan to visit USA and work along with <br> prof. Liu's chemistry group at Emory University, Atlanta. </p>
+	         </section>
+	         <section>
+	            <h3> Thanks a lot! </h3>
+	         </section>
+
+			</div>
+
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: false,
+				progress: false,
+				center: true,
+				hash: true,
+				
+            width:'100%',
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>
