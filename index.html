@@ -37,36 +37,44 @@
 	         <section>
 	            <h3>Motivation: Quantum batteries</h3>
 	            <img src="mondaystalk/fig1.png" style="width:518px;height:505px;">
-	            <p style="font-style:italic;padding-right:800px;font-size:50%">*Sci. Adv. 2022, 8 eabk3160</p>
+	            <p style="font-style:italic;padding-right:800px;font-size:50%">*Sci. Adv. 8 eabk3160 (2022)</p>
 	         </section>
 	         <section>
 	            <h3>Motivation: Quantum batteries</h3>
-	            <img src="mondaystalk/fig2.jpeg" style="width:703px;height:409px;">
-	            <p style="font-style:italic;padding-right:800px;font-size:50%">*ACS Photonics 2018, 5, 1, 65–79</p>
+	            <img src="mondaystalk/fig2.jpeg" style="width:703px;height:409px;float:left">
+	         	<p style="float:top"><br><br> Molecules in optical cavities <br> can be tuned to behave as two-level systems </p>
+	            <p style="font-style:italic;padding-right:800px;font-size:50%">*ACS Photonics 5, 1, 65–79 (2018)</p>
+	         </section>
+	         <section>
+	            <h3>Motivation: Quantum batteries</h3>
+	            <img src="mondaystalk/twolevel.png" style="width:600px;height:450px;float:left">
+	         	<p style="float:top"><br><br> Molecules in optical cavities <br> can be tuned to behave as two-level systems </p>
+	            <p style="font-style:italic;padding-right:800px;font-size:50%">*Nat Phy. 15, 483–489 (2019) </p>
 	         </section>
 	         <section>
 	            <h3>Background</h3>
 	            <ul>
 	               <li class="fragment"> Dicke model, </li>
 	               <li class="fragment"> The variational principle, </li>
-	               <li class="fragment"> Yao Wang's method. </li>
+	               <li class="fragment"> NGSED method. </li>
 	            </ul>
 	         </section>
-	         <section>
+	        <section>
 	         	<h3>Dicke model</h3>
-                <p> The Dicke model is one of the most fundamental models describing light-matter interaction. The Hamiltonian is written as </p>
-	            <ul>
-	               <li class="fragment"> \(N\) two-level systems; </li>
-	               <li class="fragment"> Single bosonic mode; </li>
-	               <li class="fragment"> No rotating wave approximation. </li>
-	            </ul>
+                <p> A collection of two-level systems interacting with a common photonic mode </p>
+				<img src="mondaystalk/dicke.png" style="width:830;height:164px">
+	            <p style="font-style:italic;padding-right:800px;font-size:50%">*Phys. Rev. Lett. 120, 117702 (2018) </p>
          	</section>
 	         <section>
 	            <h3>Dicke model</h3>
 				<h4> The Hamiltonian </h4>
-             	<p> $$ H = \omega_0 a^{\dagger} a + \Delta\sum_{j=1}^N \sigma_j^z + g(a+a^{\dagger})\sum_{j=1}^N \sigma_j^x. $$ </p>
-	         	<h4 class="fragment"> Total spin picture </h4>
-	         	<p class="fragment"> $$ H=\omega_0 a^\dagger a+\Delta S^z+g S^x (a+a^\dagger).$$ Due to this symmetry, the atomic degrees of freedom can be described in terms of \(N + 1\) states. </p>
+             	<p> $$ H = \omega_0 a^{\dagger} a + \Delta\sum_{j=1}^N \sigma_j^z + g(a+a^{\dagger})\sum_{j=1}^N \sigma_j^x, $$ </p>
+             	<p> where \( \omega_0,\Delta \) are the photonic and atomic transition frequencies and \( g \) is the coupling strength. </p>
+	         </section>
+	         <section>
+	            <h3>Dicke model</h3>
+	         	<h4> Total spin picture </h4>
+	         	<p> $$ H=\omega_0 a^\dagger a+\Delta S^z+g S^x (a+a^\dagger).$$ In this form, the atomic degrees of freedom can be described in terms of \(N + 1\) states. </p>
 	         </section>
 	         <section>
 	         	<h3>Dicke model</h3>
@@ -84,15 +92,37 @@ size 2 N . -->
 	         	<h3>Dicke model</h3>
 	         	<h4> Superradiant transition </h4>
 	            <img src="mondaystalk/fig3.gif" style="width:616px;height:456px;float:left">
-	            <p style="float:top"> <br> It was found that, when the coupling \( g\) crosses a critical value \( g_c\), the Dicke model undergoes a second-order phase transition, known as the superradiant phase transition. </p>
+	            <p style="float:top"> <br> The Dicke model undergoes a superradiant phase transition when the coupling exceeds a critical value, <br><br> \( \lambda_c = \frac{\sqrt{\omega_0\Delta}}{2}. \) </p>
+	            <p style="font-style:italic;padding-right:800px;font-size:50%">*PLoS ONE 15(9),e0235197 (2019)</p>
+	         </section>
+	         <section>
+	         	<h3>Dicke model vs Independent TLS</h3>
+				<img src="mondaystalk/dicke.png" style="width:800;height:140px">
+	            <p>Pulse duration \( \propto N \); Emission peak \( \propto N^2 \) </p> 
+				<img src="mondaystalk/independent.png" style="width:800;height:140px">
+	            <p>Pulse duration \( N \)-independent; Emission peak \( \propto N \) </p>
+	            <p style="font-style:italic;padding-right:800px;font-size:50%">*Phys. Rev. Lett. 120, 117702 (2018) </p>
+	         </section>
+	         <section>
+	         	<h3>Dicke model vs Independent TLS: Batteries</h3>
+				<img src="mondaystalk/storage.png" style="width:550px;height:350px">
+				<img src="mondaystalk/power.png" style="width:550px;height:350px">
+	            <p>Energy storage (E) and charging power (P) as a function of N. <br> (dots: Dicke battery; dashed lines: independent TLS). </p>
+	            <p style="font-style:italic;padding-right:800px;font-size:50%">*Phys. Rev. Lett. 120, 117702 (2018) </p>
 	         </section>
 	         <section>
 	            <h3>The variational principle</h3>
-	            <p> Let us suppose you wish to solve the time-independent Schrödinger equation, $$ H|\psi \rangle = E|\psi \rangle,$$ where \(|\psi \rangle\) is a trial solution. The variational principle states $$ \langle\psi | H |\psi \rangle > E_0,$$ where \(E_0\) is the true ground state energy.</p>
+	            <p> Let us suppose you wish to solve the time-independent Schrödinger equation, $$ H|\psi \rangle = E|\psi \rangle,$$ where \(|\psi \rangle\) is a trial solution. The variational principle states $$ \langle\psi | H |\psi \rangle \ge E_0,$$ where \(E_0\) is the true ground state energy.</p>
 	         </section>
 	         <section>
-	            <h3>Yao Wang's method</h3>
-                <p> A hybrid method that combines the variational principle, exact diagonalization, and an imaginary-time evolution of the variational parameters. </p>
+	            <h3>The variational principle: Particle in a box</h3>
+	         	<img src="mondaystalk/var_example.png" style="width:600px;height:450px;float:left">
+	         	<p style="float:top"><br> This Demonstration shows the variational principle applied to the quantum particle-in-a-box problem. </p> <p><br> \( \psi(x;\alpha) = (L^2 - x^2)(L^2 - \alpha x^2) \) <br> for \(-L \le x \le L\) </p>
+	            <p style="font-style:italic;padding-right:500px;font-size:50%">*http://demonstrations.wolfram.com/VariationalPrincipleForQuantumParticleInABox/</p>
+	         </section>
+	         <section>
+	            <h3> Hybrid non-Gaussian exact diagonalization (NGSED) method </h3>
+                <p> A method that combines the variational principle, exact diagonalization, and an imaginary-time evolution of the variational parameters. </p>
 	            <ul>
 	               <li class="fragment"> Define an effective spin Hamiltonian \( H_{eff}=\langle \psi_{ph} | H | \psi_{ph}\rangle \), calculate the energy throught ED, and minimize the energy for fixed variational phonon parameters; </li>
 	               <li class="fragment"> Fix the electronic ansatz and perform imaginary-time evolution of the variational phonon parameters; </li>
@@ -100,7 +130,7 @@ size 2 N . -->
 	            </ul>
 	         </section>
 	         <section>
-	            <h3>Yao Wang's method</h3>
+	            <h3> Hybrid non-Gaussian exact diagonalization (NGSED) method </h3>
 	            <img src="mondaystalk/fig4.png" style="width:530px;height:470px;">
 	            <p style="font-style:italic;padding-right:800px;font-size:50%">*Phys. Rev. Research 2, 043258 (2020)</p>
 	         </section>
@@ -113,18 +143,30 @@ size 2 N . -->
  $$ |\psi_{e}\rangle = e^{-i\frac{\theta}{2}\sum_j\sigma_j^y}|\downarrow_1\downarrow_2\cdots\rangle \equiv e^{-i\theta S^y/2}|N/2,-N/2\rangle. $$</p>
 	         </section>
 	         <section>
-	            <h3>Application of the method <br> on the Dicke model</h3>
 	            <h4> Case A: Coherent photon state ansatz </h4>
-	            <p> A coherent state $$ |\psi_{ph}\rangle=|\alpha\rangle\equiv D(\alpha)|0\rangle $$ is an eigenstate of the annihilation operator \(a|\alpha\rangle=\alpha|\alpha\rangle\). Its amplitude \( |\alpha| \) is related to the average number of photons.</p>
+	            <p> A coherent state $$ |\psi_{ph}\rangle=|\alpha\rangle\equiv D(\alpha)|0\rangle, $$ is an eigenstate of the annihilation operator \(a|\alpha\rangle=\alpha|\alpha\rangle\). <br> Its amplitude \( |\alpha| \) is related to the average number of photons.</p>
 	         </section>
-	         <section>
-	         	<h3>Application of the method <br> on the Dicke model</h3>
+			 <section data-transition="none">
 	         	<h4> Case A: Coherent photon state ansatz </h4>
-	         	<img src="mondaystalk/fig5.png" style="width:600px;height:450px;float:left">
-	         	<p style="float:top"><br> The solutions \( E_3^*\) and \( E_4^*\) only exist above a critial coupling \( g_c=\sqrt{\omega_0\Delta/N} \). <br><br>Besides, \( E_1^*,E_2^*\propto N\) while \(E_3^*,E_4^*\propto N^2 \)</p>
+	         	<img src="mondaystalk/E_coherent.png" style="width:600px;height:450px;float:left">
+	         	<p style="float:top"><br><br> The solutions \( E_3^*\) and \( E_4^*\) only exist above a critial coupling \( g_c=\sqrt{\omega_0\Delta/N} \). </p>
+	         </section>
+			 <section data-transition="none">
+	         	<h4> Case A: Coherent photon state ansatz </h4>
+	         	<img src="mondaystalk/E_coherent.png" style="width:600px;height:450px;float:left">
+	         	<p style="float:top"><br> The region \( g< g_c \) corresponds to a free-atom regime. <br><br> \( E_1^*, E_2^*  \) are the eigenenergies of the free-atom Hamiltonian \( H_{at} = \Delta S^z \). </p>
+	         </section>
+			 <section data-transition="none">
+	         	<h4> Case A: Coherent photon state ansatz </h4>
+	         	<img src="mondaystalk/E_coherent.png" style="width:600px;height:450px;float:left">
+	         	<p style="float:top"><br>Variational energy scalings:<br><br> \( E_1^*,E_2^*\propto N\) <br><br> \(E_3^*,E_4^*\propto N^2 \)</p>
+	         </section>
+			 <section>
+	         	<h4> Case A: Coherent photon state ansatz </h4>
+	         	<img src="mondaystalk/comparison.png" style="width:600px;height:450px;">
+	            <p style="font-style:italic;padding-right:800px;font-size:50%">*Phys. Rev. A 78, 051801 (2008)</p>
 	         </section>
 	         <section>
-	            <h3>Application of the method <br> on the Dicke model</h3>
 	            <h4> Case B: Variational non-Gaussian transformation </h4>
 	            <p style="padding-right:50px;padding-left:50px"><br>Here we construct a variational wave function that absorbs entanglement between electrons and phonons into a variational non-Gaussian transformation, \( |\psi\rangle = U_{plrn}|\psi_e\rangle \otimes |\psi_{ph}\rangle \) where </p>
 	            $$
@@ -132,10 +174,9 @@ size 2 N . -->
 	            $$
 	         </section>
 	         <section>
-	            <h3>Application of the method <br> on the Dicke model</h3>
 	            <h4> Case B: Variational non-Gaussian transformation </h4>
-	            <img src="mondaystalk/fig6a.png" style="width:600px;height:450px;float:left">
-	            <img src="mondaystalk/fig6b.png" style="width:600px;height:450px;float:right">
+	            <img src="mondaystalk/Emin.png" style="width:600px;height:450px;float:left">
+	         	<p style="float:top"><br> We obtained a more accurate result for the small-g region.</p> <p class='fragment'><br> There is no "free-atom" regime.  </p>
 	         </section>
 	         <section>
 	            <h3>Concluding remarks and next steps</h3>
@@ -144,9 +185,9 @@ size 2 N . -->
 	            <h3>Work in progress</h3>
 	            <h4><br> Case C: Gaussian state ansatz </h4>
 	            $$ |\psi_{ph}\rangle = S(\xi)|\alpha\rangle \equiv S(\xi)D(\alpha)|0\rangle. $$
-	            <h4> Case D: NGS + Gaussian ansatz </h4>
-	            \( |\psi\rangle = U_{plrn}|\psi_e\rangle \otimes |\psi_{ph}\rangle \),
-	            where \( |\psi_{ph}\rangle = S(\xi)|\alpha\rangle \).
+	            <h4 class='fragment'> Case D: NGS + Gaussian ansatz </h4>
+	            <p class='fragment'>\( |\psi\rangle = U_{plrn}|\psi_e\rangle \otimes |\psi_{ph}\rangle \),
+	            where \( |\psi_{ph}\rangle = S(\xi)|\alpha\rangle \).</p>
 	         </section>
 	         <section>
 	            <h3>Work in progress</h3>
@@ -157,11 +198,6 @@ size 2 N . -->
  	            $$ \sum_{ij} \sigma_i^z\sigma_j^z. $$
  	            Here the \( Z_2\) symmetry is broken. ED will be necessary.
  	            </p>
-	         </section>
-	         <section>
-			    <h3>Perspectives</h3>
-			    <h4><br> Use chemistry parameters </h4>
-			    <p> In March we plan to visit USA and work along with <br> prof. Liu's chemistry group at Emory University, Atlanta. </p>
 	         </section>
 	         <section>
 	            <h3> Thanks a lot! </h3>
